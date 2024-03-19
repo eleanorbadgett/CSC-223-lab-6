@@ -1,0 +1,57 @@
+//
+//    "Comment" : "  E                                 
+//                  /|\
+//				   / | \                                
+//                D--+--F
+//				  |\ | /|                          
+//                | \ / |                              
+//                A--B--C     
+//                                        
+{
+  "Figure" :
+  {
+    "Description" : "Box with triangle on top with intersections between.",
+    "Points" :
+	  [
+	    {
+          "name" : "A",
+          "x" : 0,
+          "y" : 0
+        },
+	    {
+	      "name" : "B",
+		  "x" : 2,
+   	      "y" : 0
+		},
+	    {
+	      "name" : "C",
+		  "x" : 4,
+   	      "y" : 0
+		},
+	    {
+	      "name" : "D",
+		  "x" : 0,
+   	      "y" : 2
+		},
+        {
+          "name" : "E",
+          "x" : 2,
+          "y" : 6
+        },
+        {
+          "name" : "F",
+          "x" : 4,
+          "y" : 2
+        }
+	  ],
+  
+    "Segments" :
+      [
+	    {"A" : ["B", "D"]},
+	    {"B" : ["C", "D", "E", "F"]},
+        {"C" : ["F"]},
+        {"D" : ["E", "F"]},
+        {"E" : ["F"]}
+      ]
+  }
+}
